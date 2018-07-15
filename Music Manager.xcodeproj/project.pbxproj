@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C443C4E20FBDDCD003CFC65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C4D20FBDDCD003CFC65 /* AppDelegate.swift */; };
 		4C443C5020FBDDCD003CFC65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C4F20FBDDCD003CFC65 /* ViewController.swift */; };
-		4C443C5320FBDDCD003CFC65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C443C5120FBDDCD003CFC65 /* Main.storyboard */; };
 		4C443C5520FBDDCE003CFC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C443C5420FBDDCE003CFC65 /* Assets.xcassets */; };
-		4C443C5820FBDDCE003CFC65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C443C5620FBDDCE003CFC65 /* LaunchScreen.storyboard */; };
 		4C443C6320FBDDCF003CFC65 /* Music_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C6220FBDDCF003CFC65 /* Music_ManagerTests.swift */; };
 		4C443C6E20FBDDCF003CFC65 /* Music_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C6D20FBDDCF003CFC65 /* Music_ManagerUITests.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +35,7 @@
 		4C443C4A20FBDDCD003CFC65 /* Music Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C443C4D20FBDDCD003CFC65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C443C4F20FBDDCD003CFC65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C443C5220FBDDCD003CFC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C443C5420FBDDCE003CFC65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C443C5720FBDDCE003CFC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C443C5920FBDDCE003CFC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C443C5E20FBDDCF003CFC65 /* Music ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C443C6220FBDDCF003CFC65 /* Music_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_ManagerTests.swift; sourceTree = "<group>"; };
@@ -99,9 +95,7 @@
 			children = (
 				4C443C4D20FBDDCD003CFC65 /* AppDelegate.swift */,
 				4C443C4F20FBDDCD003CFC65 /* ViewController.swift */,
-				4C443C5120FBDDCD003CFC65 /* Main.storyboard */,
 				4C443C5420FBDDCE003CFC65 /* Assets.xcassets */,
-				4C443C5620FBDDCE003CFC65 /* LaunchScreen.storyboard */,
 				4C443C5920FBDDCE003CFC65 /* Info.plist */,
 			);
 			path = "Music Manager";
@@ -229,9 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C443C5820FBDDCE003CFC65 /* LaunchScreen.storyboard in Resources */,
 				4C443C5520FBDDCE003CFC65 /* Assets.xcassets in Resources */,
-				4C443C5320FBDDCD003CFC65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +283,6 @@
 			targetProxy = 4C443C6A20FBDDCF003CFC65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4C443C5120FBDDCD003CFC65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C443C5220FBDDCD003CFC65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C443C5620FBDDCE003CFC65 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C443C5720FBDDCE003CFC65 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C443C7020FBDDCF003CFC65 /* Debug */ = {
