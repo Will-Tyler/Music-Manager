@@ -73,6 +73,7 @@
 		4C443C4120FBDDCD003CFC65 = {
 			isa = PBXGroup;
 			children = (
+				4C443C7B20FBE533003CFC65 /* Apple Music */,
 				4C443C4C20FBDDCD003CFC65 /* Music Manager */,
 				4C443C6120FBDDCF003CFC65 /* Music ManagerTests */,
 				4C443C6C20FBDDCF003CFC65 /* Music ManagerUITests */,
@@ -117,6 +118,13 @@
 				4C443C6F20FBDDCF003CFC65 /* Info.plist */,
 			);
 			path = "Music ManagerUITests";
+			sourceTree = "<group>";
+		};
+		4C443C7B20FBE533003CFC65 /* Apple Music */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Apple Music";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
