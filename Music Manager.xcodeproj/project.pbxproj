@@ -12,6 +12,16 @@
 		4C443C5520FBDDCE003CFC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C443C5420FBDDCE003CFC65 /* Assets.xcassets */; };
 		4C443C6320FBDDCF003CFC65 /* Music_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C6220FBDDCF003CFC65 /* Music_ManagerTests.swift */; };
 		4C443C6E20FBDDCF003CFC65 /* Music_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C6D20FBDDCF003CFC65 /* Music_ManagerUITests.swift */; };
+		4C443C7D20FBE643003CFC65 /* AppleMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C443C7C20FBE643003CFC65 /* AppleMusic.swift */; };
+		4C8736972100F4E4007BAADF /* JWTHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87368E2100F4E4007BAADF /* JWTHeader.swift */; };
+		4C8736982100F4E4007BAADF /* JWTPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87368F2100F4E4007BAADF /* JWTPayload.swift */; };
+		4C8736992100F4E4007BAADF /* JWTSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736902100F4E4007BAADF /* JWTSigner.swift */; };
+		4C87369A2100F4E4007BAADF /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736912100F4E4007BAADF /* JWT.swift */; };
+		4C87369B2100F4E4007BAADF /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736922100F4E4007BAADF /* JWTError.swift */; };
+		4C87369C2100F4E4007BAADF /* JWTVerifiableClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736932100F4E4007BAADF /* JWTVerifiableClaim.swift */; };
+		4C87369D2100F4E4007BAADF /* JWTSigners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736942100F4E4007BAADF /* JWTSigners.swift */; };
+		4C87369E2100F4E4007BAADF /* JWTClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736952100F4E4007BAADF /* JWTClaim.swift */; };
+		4C87369F2100F4E4007BAADF /* JWTAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8736962100F4E4007BAADF /* JWTAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +53,16 @@
 		4C443C6920FBDDCF003CFC65 /* Music ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C443C6D20FBDDCF003CFC65 /* Music_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_ManagerUITests.swift; sourceTree = "<group>"; };
 		4C443C6F20FBDDCF003CFC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C443C7C20FBE643003CFC65 /* AppleMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic.swift; sourceTree = "<group>"; };
+		4C87368E2100F4E4007BAADF /* JWTHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTHeader.swift; sourceTree = "<group>"; };
+		4C87368F2100F4E4007BAADF /* JWTPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTPayload.swift; sourceTree = "<group>"; };
+		4C8736902100F4E4007BAADF /* JWTSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTSigner.swift; sourceTree = "<group>"; };
+		4C8736912100F4E4007BAADF /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		4C8736922100F4E4007BAADF /* JWTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTError.swift; sourceTree = "<group>"; };
+		4C8736932100F4E4007BAADF /* JWTVerifiableClaim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTVerifiableClaim.swift; sourceTree = "<group>"; };
+		4C8736942100F4E4007BAADF /* JWTSigners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTSigners.swift; sourceTree = "<group>"; };
+		4C8736952100F4E4007BAADF /* JWTClaim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTClaim.swift; sourceTree = "<group>"; };
+		4C8736962100F4E4007BAADF /* JWTAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				4C443C7B20FBE533003CFC65 /* Apple Music */,
+				4C87368D2100F4E4007BAADF /* JWT */,
 				4C443C4C20FBDDCD003CFC65 /* Music Manager */,
 				4C443C6120FBDDCF003CFC65 /* Music ManagerTests */,
 				4C443C6C20FBDDCF003CFC65 /* Music ManagerUITests */,
@@ -123,8 +144,25 @@
 		4C443C7B20FBE533003CFC65 /* Apple Music */ = {
 			isa = PBXGroup;
 			children = (
+				4C443C7C20FBE643003CFC65 /* AppleMusic.swift */,
 			);
 			path = "Apple Music";
+			sourceTree = "<group>";
+		};
+		4C87368D2100F4E4007BAADF /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				4C87368E2100F4E4007BAADF /* JWTHeader.swift */,
+				4C87368F2100F4E4007BAADF /* JWTPayload.swift */,
+				4C8736902100F4E4007BAADF /* JWTSigner.swift */,
+				4C8736912100F4E4007BAADF /* JWT.swift */,
+				4C8736922100F4E4007BAADF /* JWTError.swift */,
+				4C8736932100F4E4007BAADF /* JWTVerifiableClaim.swift */,
+				4C8736942100F4E4007BAADF /* JWTSigners.swift */,
+				4C8736952100F4E4007BAADF /* JWTClaim.swift */,
+				4C8736962100F4E4007BAADF /* JWTAlgorithm.swift */,
+			);
+			path = JWT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C87369B2100F4E4007BAADF /* JWTError.swift in Sources */,
+				4C8736972100F4E4007BAADF /* JWTHeader.swift in Sources */,
+				4C8736992100F4E4007BAADF /* JWTSigner.swift in Sources */,
+				4C87369C2100F4E4007BAADF /* JWTVerifiableClaim.swift in Sources */,
+				4C87369A2100F4E4007BAADF /* JWT.swift in Sources */,
 				4C443C5020FBDDCD003CFC65 /* ViewController.swift in Sources */,
 				4C443C4E20FBDDCD003CFC65 /* AppDelegate.swift in Sources */,
+				4C87369E2100F4E4007BAADF /* JWTClaim.swift in Sources */,
+				4C8736982100F4E4007BAADF /* JWTPayload.swift in Sources */,
+				4C87369F2100F4E4007BAADF /* JWTAlgorithm.swift in Sources */,
+				4C443C7D20FBE643003CFC65 /* AppleMusic.swift in Sources */,
+				4C87369D2100F4E4007BAADF /* JWTSigners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
