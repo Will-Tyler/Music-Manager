@@ -9,4 +9,16 @@
 import Foundation
 
 
-print("Hello, World!")
+let fileManager = FileManager.default
+let currentPath = fileManager.currentDirectoryPath
+
+print(currentPath)
+
+let jsonFileURL = URL(fileURLWithPath: "Tracks.json")
+let jsonData = try! Data(contentsOf: jsonFileURL)
+let decoder = JSONDecoder()
+let tracks = try! decoder.decode([Track].self, from: jsonData)
+
+for track in tracks {
+	print(track.name)
+}
