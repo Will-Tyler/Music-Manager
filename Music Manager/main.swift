@@ -14,7 +14,7 @@ print("Loading tracks...")
 let jsonFileURL = URL(fileURLWithPath: "Tracks.json")
 let jsonData = try! Data(contentsOf: jsonFileURL)
 let decoder = JSONDecoder()
-let tracks = try! decoder.decode([Track].self, from: jsonData)
+let iTunesTracks = try! decoder.decode([Track].self, from: jsonData)
 
 print("Tracks loaded...", "Getting Spotify access token...", separator: "\n")
 
@@ -54,6 +54,45 @@ semaphore.wait()
 
 print("Got access token...", "Searching songs in Spotify...", separator: "\n")
 
-for track in tracks {
-
+var spotifyTracks: [Spotify.Track] = [] {
+	didSet {
+		if let last = spotifyTracks.last {
+			print(last.name)
+		}
+	}
 }
+var searchCount = 0
+
+for track in iTunesTracks {
+	Spotify.get(endpoint: "search", access: access, parameters: [
+		"q": "track:\"\(track.name)\"artist:\(track.artist)",
+		"type": "track",
+		"limit": "1"
+		], with: { (data, response, error) in
+			defer {
+				semaphore.signal()
+				searchCount += 1
+			}
+
+			guard error == nil else {
+				print(error!.localizedDescription)
+				return
+			}
+			guard let data = data else {
+				return
+			}
+			let result = try! decoder.decode(Spotify.SearchResult.self, from: data)
+
+			if let tracks = result.tracksResult?.items {
+				if let firstTrack = tracks.first {
+					spotifyTracks.append(firstTrack)
+				}
+			}
+	})
+
+	semaphore.wait()
+}
+
+print("Done searching tracks on Spotify...", "Performed \(searchCount) searches...", "Found \(spotifyTracks.count) matches for \(iTunesTracks.count) searches...", separator: "\n")
+
+let spotifyIDs = spotifyTracks.map({ return $0.id })
