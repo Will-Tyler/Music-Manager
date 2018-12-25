@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		4C0924E621D2BE0B00B49D10 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		4C0924E821D2C60700B49D10 /* Spotify.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Spotify.txt; sourceTree = "<group>"; };
 		4C9A73C721D1A53400BEEFF1 /* Music Manager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Music Manager"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9A73CA21D1A53400BEEFF1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4C9A73D121D1A9F500BEEFF1 /* Library.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Library.xml; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		4C9A73BE21D1A53400BEEFF1 = {
 			isa = PBXGroup;
 			children = (
+				4C0924E821D2C60700B49D10 /* Spotify.txt */,
 				4C9A73D421D1C74900BEEFF1 /* Tracks.json */,
 				4C9A73D121D1A9F500BEEFF1 /* Library.xml */,
 				4C9A73C921D1A53400BEEFF1 /* Music Manager */,

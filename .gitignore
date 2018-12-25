@@ -70,3 +70,4 @@ fastlane/test_output
 *.p8
 Library.xml
 Tracks.json
+Spotify.txt
