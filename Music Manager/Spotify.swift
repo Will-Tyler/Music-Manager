@@ -13,7 +13,8 @@ class Spotify {
 
 	private static let baseURL = URL(string: "https://api.spotify.com/v1")!
 
-	static func get(endpoint: String, access: Access, parameters: [String: String], with handler: @escaping (Data?, URLResponse?, Error?)->()) {
+	@discardableResult
+	static func get(endpoint: String, access: Access, parameters: [String: String], with handler: @escaping (Data?, HTTPURLResponse?, Error?)->()) -> URLSessionDataTask {
 		let url = baseURL.appendingPathComponent("/\(endpoint)")
 		var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
 
@@ -24,7 +25,45 @@ class Spotify {
 		request.httpMethod = "GET"
 		request.setValue("Bearer \(access.token)", forHTTPHeaderField: "Authorization")
 
-		URLSession.shared.dataTask(with: request, completionHandler: handler).resume()
+		let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+			handler(data, response as? HTTPURLResponse, error)
+		})
+
+		defer {
+			task.resume()
+		}
+
+		return task
+	}
+
+	@discardableResult
+	static func put(endpoint: String, access: Access, parameters: [String: String] = [:], json: Any? = nil, with handler: @escaping (Data?, HTTPURLResponse?, Error?)->()) -> URLSessionDataTask {
+		let url = baseURL.appendingPathComponent("/\(endpoint)")
+		var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
+
+		components.queryItems = parameters.map({ return URLQueryItem(name: $0, value: $1) })
+
+		var request = URLRequest(url: components.url!)
+
+		request.httpMethod = "PUT"
+		request.setValue("Bearer \(access.token)", forHTTPHeaderField: "Authorization")
+		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+		if let json = json {
+			let data = try! JSONSerialization.data(withJSONObject: json)
+
+			request.httpBody = data
+		}
+
+		let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+			handler(data, response as? HTTPURLResponse, error)
+		})
+
+		defer {
+			task.resume()
+		}
+
+		return task
 	}
 
 }
@@ -90,7 +129,7 @@ extension Spotify {
 
 	class SearchResult: Decodable {
 
-		let tracksResult: TracksResult?
+		let tracksResult: TracksResult
 
 		enum CodingKeys: String, CodingKey {
 

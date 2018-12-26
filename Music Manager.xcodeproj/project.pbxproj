@@ -10,10 +10,7 @@
 		4C0924E721D2BE0B00B49D10 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0924E621D2BE0B00B49D10 /* Spotify.swift */; };
 		4C0924EA21D2DCB300B49D10 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0924E921D2DCB300B49D10 /* String.swift */; };
 		4C9A73CB21D1A53400BEEFF1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A73CA21D1A53400BEEFF1 /* main.swift */; };
-		4C9A73D321D1ABEA00BEEFF1 /* XMLDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A73D221D1ABEA00BEEFF1 /* XMLDelegate.swift */; };
 		4C9A73D621D1C7CD00BEEFF1 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A73D521D1C7CD00BEEFF1 /* Track.swift */; };
-		4C9A73D821D1CD0100BEEFF1 /* ElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A73D721D1CD0100BEEFF1 /* ElementType.swift */; };
-		4C9A73DA21D1D03200BEEFF1 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A73D921D1D03200BEEFF1 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,14 +29,12 @@
 		4C0924E621D2BE0B00B49D10 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
 		4C0924E821D2C60700B49D10 /* Spotify.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Spotify.txt; sourceTree = "<group>"; };
 		4C0924E921D2DCB300B49D10 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4C5812E021D32D58004DF697 /* UserAccess.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserAccess.txt; sourceTree = "<group>"; };
 		4C9A73C721D1A53400BEEFF1 /* Music Manager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Music Manager"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9A73CA21D1A53400BEEFF1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4C9A73D121D1A9F500BEEFF1 /* Library.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Library.xml; sourceTree = "<group>"; };
-		4C9A73D221D1ABEA00BEEFF1 /* XMLDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDelegate.swift; sourceTree = "<group>"; };
 		4C9A73D421D1C74900BEEFF1 /* Tracks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tracks.json; sourceTree = "<group>"; };
 		4C9A73D521D1C7CD00BEEFF1 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		4C9A73D721D1CD0100BEEFF1 /* ElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementType.swift; sourceTree = "<group>"; };
-		4C9A73D921D1D03200BEEFF1 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +54,7 @@
 				4C9A73D121D1A9F500BEEFF1 /* Library.xml */,
 				4C0924E821D2C60700B49D10 /* Spotify.txt */,
 				4C9A73D421D1C74900BEEFF1 /* Tracks.json */,
+				4C5812E021D32D58004DF697 /* UserAccess.txt */,
 				4C9A73C921D1A53400BEEFF1 /* Music Manager */,
 				4C9A73C821D1A53400BEEFF1 /* Products */,
 			);
@@ -76,12 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				4C9A73CA21D1A53400BEEFF1 /* main.swift */,
-				4C9A73D721D1CD0100BEEFF1 /* ElementType.swift */,
 				4C0924E621D2BE0B00B49D10 /* Spotify.swift */,
-				4C9A73D921D1D03200BEEFF1 /* Stack.swift */,
 				4C0924E921D2DCB300B49D10 /* String.swift */,
 				4C9A73D521D1C7CD00BEEFF1 /* Track.swift */,
-				4C9A73D221D1ABEA00BEEFF1 /* XMLDelegate.swift */,
 			);
 			path = "Music Manager";
 			sourceTree = "<group>";
@@ -144,9 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0924E721D2BE0B00B49D10 /* Spotify.swift in Sources */,
-				4C9A73D821D1CD0100BEEFF1 /* ElementType.swift in Sources */,
-				4C9A73DA21D1D03200BEEFF1 /* Stack.swift in Sources */,
-				4C9A73D321D1ABEA00BEEFF1 /* XMLDelegate.swift in Sources */,
 				4C0924EA21D2DCB300B49D10 /* String.swift in Sources */,
 				4C9A73CB21D1A53400BEEFF1 /* main.swift in Sources */,
 				4C9A73D621D1C7CD00BEEFF1 /* Track.swift in Sources */,

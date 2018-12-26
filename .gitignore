@@ -71,3 +71,5 @@ fastlane/test_output
 Library.xml
 Tracks.json
 Spotify.txt
+UserAccess.txt
+Failed.txt
